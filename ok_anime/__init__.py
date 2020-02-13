@@ -1,0 +1,1 @@
+from .ok_anime import Anime
