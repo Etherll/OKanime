@@ -24,7 +24,7 @@ print(ok.title)
 
 index:	
 ```python
-#json of all searchs in OKAnime for anime name
+#json for search in OKAnime
 print(ok.search)
 #get anime title
 print(ok.title)
