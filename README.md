@@ -15,40 +15,43 @@ pip install ok-anime
 
 example
 ==========
+```pyton
 
-    from ok_anime import Anime
-    ok = Anime('Anime Name')
-    print(ok.title)
+from ok_anime import Anime
+ok = Anime('Anime Name')
+print(ok.title)
+```
 
 index:	
-	#json of all searchs in OKAnime for anime name
-	print(ok.search)
-	#get anime title
-    	print(ok.title)
-	#get anime genre
-	print(ok.genre)
-	#get anime url
-	print(ok.url)
-	#get anime cover
-	print(ok.cover)
-	#get anime status
-	print(ok.status)
-	#get anime year
-	print(ok.year)
-	#get anime episodes
-	print(ok.episodes)
-	#get anime age_classification
-	print(ok.age_classification)
-	print(ok.rate)
-	#get anime rate
-	print(ok.description)
-	#get anime
-	print(ok.trailer)
-	#get anime
-	print(ok.studio)
-	#get anime
-	print(ok.director)
-	#get anime
+```python
+#json of all searchs in OKAnime for anime name
+print(ok.search)
+#get anime title
+print(ok.title)
+#get anime genre
+print(ok.genre)
+#get anime url
+print(ok.url)
+#get anime cover
+print(ok.cover)
+#get anime status
+print(ok.status)
+#get anime year
+print(ok.year)
+#get anime episodes
+print(ok.episodes)
+#get anime age_classification
+print(ok.age_classification)
+print(ok.rate)
+#get anime rate
+print(ok.description)
+#get anime
+print(ok.trailer)
+#get anime
+print(ok.studio)
+#get anime
+print(ok.director)
+```
 	
 
 this information is fetched from OkAnime
