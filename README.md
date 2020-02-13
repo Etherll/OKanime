@@ -24,7 +24,7 @@ print(ok.title)
 
 index:	
 ```python
-#json for search in OKAnime
+#json of all searchs in OKAnime for anime name
 print(ok.search)
 #get anime title
 print(ok.title)
@@ -45,13 +45,15 @@ print(ok.age_classification)
 print(ok.rate)
 #get anime rate
 print(ok.description)
-#get anime
+#get anime trailer
 print(ok.trailer)
-#get anime
+#get anime studio
 print(ok.studio)
-#get anime
+#get anime director
 print(ok.director)
 ```
 	
+
+this information is fetched from OkAnime
 
 Make sure you don't spam the tests too quickly! One of the tests involves POSTing invalid credentials to OKAnime, so you're likely to be IP-banned if you do this too much in too short a span of time.
