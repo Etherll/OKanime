@@ -1,31 +1,32 @@
-try:
-  from setuptools import setup
-except ImportError:
-  from distutils.core import setup
-import setuptools
 
+from distutils.core import setup
 
-long_description = open('README.md').read()
-
-
-config = {
-  'name': 'ok-anime',
-  'description': 'this is a python wrapper for https://www.okanime.com',
-  'author': 'Etherl',
-  'keywords': ['ok anime', 'anime', 'ok','Arabic'],
-  'python_requires': '>=3.4, <4',
-  'license': '''Copyright (c) 2019 The Python Packaging Authority
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
-documentation files (the "Software"), to deal in the Software without restriction, including without limitation 
-the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
-and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-.''',
-  'long_description': long_description,
-  'long_description_content_type': 'text/markdown',
-  'url': 'https://github.com/Etherll/OKanime',
-  'version': '1.0',
-  'install_requires': ['requests', 'bs4'],
-  'packages': setuptools.find_packages()
-}
+with open("README.md", "r") as fh:
+  long_description = fh.read()
+setup(
+  name = 'ok_anime',         # How you named your package folder (MyLib)
+  packages = ['ok_anime'],   # Chose the same as "name"
+  version = '0.1',      # Start with a small number and increase it with every change you make
+  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
+  description = 'python wrapper for OKanime',   # Give a short description about your library
+  long_description= long_description,
+  author = 'Etherl',                   # Type in your name
+  author_email = 'None@domain.com',      # Type in your E-Mail
+  url = 'https://github.com/user/reponame',   # Provide either the link to your github or to your website
+  download_url = 'https://github.com/Etherll/OKanime',    # I explain this later on
+  keywords = ['ok', 'ok anime', 'anime'],   # Keywords that define your package best
+  install_requires=[            # I get to this in a second
+          'requests',
+          'bs4',
+      ],
+  classifiers=[
+    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
+    'Intended Audience :: Developers',      # Define that your audience are developers
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',   # Again, pick a license
+    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+  ],
+)
