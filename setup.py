@@ -24,7 +24,7 @@ The above copyright notice and this permission notice shall be included in all c
 .''',
   'long_description': long_description,
   'long_description_content_type': 'text/markdown',
-  'url': 'https://github.com/Etherl/OkAnime',
+  'url': 'https://github.com/Etherll/OKanime',
   'version': '1.0',
   'install_requires': ['requests', 'bs4'],
   'packages': setuptools.find_packages()
