@@ -54,6 +54,4 @@ print(ok.director)
 ```
 	
 
-this information is fetched from OkAnime
-
 Make sure you don't spam the tests too quickly! One of the tests involves POSTing invalid credentials to OKAnime, so you're likely to be IP-banned if you do this too much in too short a span of time.
