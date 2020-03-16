@@ -1,12 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
 class Anime:
-    def __init__(self,name):
-        Anime_Name = name.replace(' ', '+')
+    def __init__(self,AnimeName):
+        Anime_Name = AnimeName.replace(' ', '+')
         search = f'https://www.okanime.com/search/autocomplete?term={Anime_Name}'
 
-        req = requests.get(search).text
-        value = eval(req)
+        req = requests.get(search)
+        value = req.json()
         try:
             value[0]
         except Exception:
@@ -28,6 +28,10 @@ class Anime:
         try:
             cover = soup.find(class_="col-md-3 col-md-offset-1 no-padding-left text-center cover").img['src']
             self.cover = f'https://www.okanime.com{cover}'
+            try:
+                req = requests.get(self.cover)
+            except Exception:
+                self.cover = cover
         except Exception:
             self.cover = (None)
         info = soup.find(class_="col-md-8 no-padding-right text-right ltr_direction")
@@ -82,3 +86,9 @@ class Anime:
             self.title = title[1].text
         except Exception:
             self.title=(None)
+    def favorite_anime(self,yourname):
+        r2 = requests.get(f'https://www.okanime.com/profiles/{yourname}#favorite').text
+        soup = BeautifulSoup(r2, 'html.parser')
+        find = soup.find_all(class_='info-box')
+        val = '\n'.join(map(str, [i.text.replace('\n', '') for i in find]))
+        return val
