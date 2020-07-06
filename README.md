@@ -39,7 +39,6 @@ print(ok.status)
 
 print(ok.year)
 
-
 print(ok.episodes)
 
 print(ok.age_classification)
