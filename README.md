@@ -24,32 +24,34 @@ print(ok.title)
 
 index:	
 ```python
-#json of all searchs in OKAnime for anime name
+#json of all searchs in OKAnime
 print(ok.search)
-#get anime title
+
 print(ok.title)
-#get anime genre
+
 print(ok.genre)
-#get anime url
+
 print(ok.url)
-#get anime cover
+
 print(ok.cover)
-#get anime status
+
 print(ok.status)
-#get anime year
+
 print(ok.year)
-#get anime episodes
+
+
 print(ok.episodes)
-#get anime age_classification
+
 print(ok.age_classification)
+
 print(ok.rate)
-#get anime rate
+
 print(ok.description)
-#get anime trailer
+
 print(ok.trailer)
-#get anime studio
+
 print(ok.studio)
-#get anime director
+
 print(ok.director)
 ```
 	
